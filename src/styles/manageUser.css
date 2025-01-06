@@ -1,0 +1,48 @@
+.table {
+    background-color: transparent !important;
+    color: white !important; 
+    border-collapse: separate;
+}
+
+.table th, 
+.table td {
+    color: white !important; 
+    background-color: transparent !important; 
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.1) !important; 
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.05) !important; 
+}
+
+.search-bar {
+    width: 300px;
+    height: 30px; 
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat 8px center;
+    background-size: 16px; 
+    padding-left: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-bar:focus {
+    border-color: #ac4d00;
+    box-shadow: 0 0 5px rgba(255, 196, 0, 0.5); 
+    outline: none;
+  }
+  
+  .search-bar::placeholder {
+    color: #bbb;
+    font-style: normal;
+  }
+  
+  .search-bar:hover {
+    border-color: #888; 
+  }
+  

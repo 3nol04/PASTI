@@ -1,0 +1,145 @@
+
+.register-container {
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/Home/BG_Image.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  animation: none; 
+  overflow: hidden; 
+}
+
+.register-card {
+  width: 100%;
+  max-width: 500px; 
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: slideDown 0.8s ease-in-out; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.register-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.register-heading {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group .toggle-button {
+  border-radius: 0 10px 10px 0;
+}
+
+.register-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #007bff;
+  animation: linkFadeIn 2s ease-in;
+}
+
+.register-link:hover {
+  color: #0056b3;
+}
+
+.pulse-button {
+  animation: pulse 1.5s infinite;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.toggle-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #000000;
+  position: absolute;
+  right: 10px;
+  top: 75%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-button i {
+  font-size: 1.2rem;
+}
+
+.toggle-button:hover {
+  color: #616161;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 20px #0056b3;
+  }
+  50% {
+    text-shadow: 0 0 10px #0056b3, 0 0 20px #007bff, 0 0 40px #003366;
+  }
+}
+
+@keyframes linkFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseButton {
+  0%, 100% {
+    background-color: rgba(0, 123, 255, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(0, 123, 255, 0.9);
+    transform: scale(1.05);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-out;
+}

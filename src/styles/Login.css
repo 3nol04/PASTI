@@ -1,0 +1,101 @@
+.login-container {
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/Home/BG_Image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+  }
+  
+  .card-wrapper {
+    animation: slideDown 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-card {
+    width: 360px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: black;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  .slide-in {
+    animation: slideIn 1.2s ease-out;
+  }
+  
+  .pulse-button {
+    animation: pulse 1.6s infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .register-link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  .register-link:hover {
+    color: #0056b3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    }
+  }
+  

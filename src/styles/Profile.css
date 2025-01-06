@@ -1,0 +1,102 @@
+ 
+  .profile-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #1e3c72, #2a5298);
+    position: relative;
+    background-image: url('/assets/Home/BG_Image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 50px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .profile-form-card {
+    width: 420px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 25px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field:focus {
+    border-color: #1e3c72;
+    outline: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .submit-button.loading {
+    cursor: not-allowed;
+    background: #ccc;
+  }
+  

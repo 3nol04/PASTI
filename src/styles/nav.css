@@ -1,0 +1,150 @@
+
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-size: 20px;
+  font-family: Raleway;
+}
+
+nav li.active a {
+  background-color: #000000;
+  padding: 4px 2px;
+}
+
+nav li a:active, .teks {
+  color: rgb(0, 0, 0);
+}
+
+.teks:hover {
+  font-family: Raleway;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .teks {
+    padding-left: 20px;
+  }
+
+  .judul {
+    display: none;
+  }
+
+  .judul2 {
+    display: block;
+  }
+
+  .btn {
+    height: 40px;
+    width: 100px;
+    font-family: Raleway;
+  }
+
+  i {
+    display: none;
+  }
+}
+
+.navbar .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.admin-title {
+  font-family: 'Matura MT Script Capitals', cursive;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.user-title {
+  font-family: 'Matura MT Script Capitals', cursive;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.navbar-nav.mx-auto {
+  margin-right: 20px; 
+}
+
+.navbar-nav.ms-auto {
+  margin-left: auto;
+  margin-right: 20px; 
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: width 0.5s ease; 
+}
+
+.navbar-nav .nav-item:hover::after {
+  width: 100%; 
+}
+
+
+.dropdown-toggle {
+  text-decoration: none;
+  position: relative;
+  color: white; 
+  font-size: 1.1em; 
+  font-family: Raleway;
+  left: -20px; 
+}
+
+.dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff; 
+  width: 0%; 
+  height: 2px; 
+  transition: width 0.3s ease; 
+  visibility: hidden;
+}
+
+
+.dropdown-toggle:hover::after {
+  width: 100%; 
+  visibility: visible;
+}
+
+.dropdown-toggle:hover {
+  color: white;
+}
+
+.hover-red:hover {
+  color: red !important; 
+}

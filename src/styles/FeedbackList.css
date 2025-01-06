@@ -1,0 +1,47 @@
+.container {
+    padding: 10px;
+    text-align: start;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .feedback-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .person-icon {
+    font-size: 36px;
+    color: #070707;
+    margin-right: 15px;
+  }
+  
+  .feedback-content {
+    flex: 1;
+  }
+  
+  .email {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .message {
+    color: #666;
+   
+  }
+  
